@@ -1,0 +1,36 @@
+#topheader{
+	background: skyblue;
+	height: 40px;
+	padding: 10px;
+}
+#header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: green;
+}
+.menu{
+	height: 150px;
+	padding: 50px;
+	font-size: 20px;
+}
+#about{
+	font-style: italic;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+#about span{
+	color: green;
+}
+#about img{
+	height: 450px;
+}
+.aboutimg.aboutus{
+	
+}
+#pagebody{
+	padding: 30px 0;
+}
+#contactpage{
+	background: red;
+}

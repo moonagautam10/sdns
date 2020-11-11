@@ -1,0 +1,118 @@
+#topheader{
+	background: #1045ac;
+	padding: 10px 0;
+	color: #fff;
+}
+.topheader-left{
+	text-align: right;
+}
+.topheader-left a{
+	color: #fff;
+	text-decoration: none;
+}
+.menubar{
+	text-align: right;
+}
+#slider{
+	
+}
+#header{
+	z-index: 9999999;
+	position: absolute;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 10px 0;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+	color: red;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #1045ac	;
+}
+.informationbox-left{
+	background: #1045ac;
+	padding: 20px 30px;
+}
+.informationbox-right{
+	background: #014bba;
+	padding: 20px 30px;
+}
+#informatonbox{
+	margin-top: -70px;
+}
+ul.noticeboard{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.noticeboard li {
+	border-bottom: 1px solid #0c388e;
+	padding: 10px 0
+}
+ul.noticeboard li a{
+	color: #fff;
+	text-decoration: none;
+}
+.noticeboard h5{
+	color: yellow;
+	border-bottom: 2px solid #ff0;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+#welcome{
+	background: #f0f4fc;
+	padding: 60px 0
+}
+#features{
+	padding: 60px 0;
+}
+.facilities_block {
+    padding: 23px 0px;
+    background: #eae8e9;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    line-height: 3;
+    text-align: center;
+    }
+.facilities {
+    text-align: center;
+}
+h5.title{
+	border-bottom: 2px solid #1045ac;
+	line-height: 35px;
+}
+#footer{
+   	width:100%;
+	background: #1045ac;
+	padding: 15px;
+	color: white;
+}
+#pageheading{
+	background: url(../img/intro1.jpg);
+	padding: 30px 0;
+}
+.footericon .svg-inline--fa{
+	font-size: 30px;
+
+}
+ul.sidebarlist{
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+ul.sidebarlist li{
+	border-bottom: 1px dashed #ccc;
+	line-height: 40px; 
+}
+@media (max-width: 767px) {
+    /* CSS goes here */
+    #topheader, .topheader-left{
+    	text-align: center;
+    }
+    #header{
+    position: initial;
+    text-align: center;
+}
+
+}
