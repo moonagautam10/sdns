@@ -40,6 +40,10 @@ Route::middleware(['auth:sanctum', 'verified'])->post('/manage/noticeboard/add',
 Route::middleware(['auth:sanctum', 'verified'])->get('/manage/noticeboard/delete/{noticeboard}', [HomeController::class, 'getDeleteNoticeboard'])->name('getDeleteNoticeboard');
 Route::middleware(['auth:sanctum', 'verified'])->get('/manage/noticeboard/edit/{noticeboard}', [HomeController::class, 'getEditNoticeboard'])->name('getEditNoticeboard');
 Route::middleware(['auth:sanctum', 'verified'])->post('/manage/noticeboard/edit/{noticeboard}', [HomeController::class, 'postEditNoticeboard'])->name('postEditNoticeboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/manage/slider', [HomeController::class, 'getManageSlider'])->name('getManageSlider');
+Route::middleware(['auth:sanctum', 'verified'])->get('/manage/slider/add', [HomeController::class, 'getAddSlider'])->name('getAddSlider');
+Route::middleware(['auth:sanctum', 'verified'])->post('/manage/slider/add', [HomeController::class, 'postAddSlider'])->name('postAddSlider');
+Route::middleware(['auth:sanctum', 'verified'])->get('/manage/slider/delete/{slider}', [HomeController::class, 'getDeleteSlider'])->name('getDeleteSlider');
 
 // for news
 Route::middleware(['auth:sanctum', 'verified'])->get('/manage/news', [HomeController::class, 'getManageNews'])->name('getManageNews');

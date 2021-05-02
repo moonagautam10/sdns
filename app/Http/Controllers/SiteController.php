@@ -7,6 +7,7 @@ use App\Models\Page;
 use App\Models\Feature;
 use App\Models\Team;
 use App\Models\Gallery;
+use App\Models\Slider;
 
 use Illuminate\Http\Request;
 
@@ -18,7 +19,8 @@ class SiteController extends Controller
     	'news'=>News::all(),
     	'about'=>Page::where('slug','about-us')->limit(1)->first(),
     	'chairman'=>Page::where('slug','principle')->limit(1)->first(),
-    	'features'=>Feature::orderby('id', 'desc')->get()
+    	'features'=>Feature::orderby('id', 'desc')->get(),
+        'sliders'=>Slider::all()
 
     	];
     	return view('site.home',$data);

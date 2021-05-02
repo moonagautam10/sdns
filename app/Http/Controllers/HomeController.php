@@ -10,6 +10,7 @@ use App\Models\Team;
 use App\Models\Feature;
 use App\Models\Gallery;
 use App\Models\Page;
+use App\Models\Slider;
 class HomeController extends Controller
 {
     public function getManageNoticeboard(){
@@ -68,6 +69,20 @@ class HomeController extends Controller
         return redirect()->route('getManageNoticeboard')->with('message', 'Únable to edit due to title dublicate');
         }
     }
+    //for slider
+    public function getManageSlider(){
+        $data=[
+            'sliders'=>Slider::orderby('id','desc')->get()
+
+        ];
+        return view('layouts.slider.manage',$data);
+    }
+    public function getAddSlider(){
+        return view('layouts.slider.add');
+    }
+
+
+
 	 //for news
 	public function getManageNews(){
 		$data=[
@@ -78,6 +93,25 @@ class HomeController extends Controller
 	public function getAddNews(){
 		return view('layouts.news.add');
 	}
+    public function postAddSlider(Request $request){
+        $photo=$request->file('photo');
+
+        $getuniquename = sha1($photo->getClientOriginalName().time());
+        $getextension = $photo->getClientOriginalExtension();
+        $getrealname= $getuniquename.'.'.$getextension;
+        $photo->move('site/img/slider/',$getrealname);
+
+        $slider=New Slider;
+        $slider->photo=$getrealname;
+        $slider->save();
+        return redirect()->route('getManageSlider')->with('message', 'Slider Added Success.');
+}
+        public function getDeleteSlider(Slider $slider){
+        $slider->delete();
+        return redirect()->route('getManageSlider')->with('message', 'Slider Deleted Success.');
+    
+
+    }
 	public function postAddNews(Request $request){
 		$title=$request->input('title');
 		$detail=$request->input('detail');

@@ -6,7 +6,7 @@
 		<link rel="icon" href="{{asset('site/img/fav.png')}}" type="image/x-icon"/>
 		<link rel="icon" type="image/png" href="{{asset('site/img/fav.png')}}"/>
 		<link rel="stylesheet" href="{{asset('site/bootstrap/css/bootstrap.css')}}">
-		<link rel="stylesheet" href="{{asset('site/fontawesome/css/all.js')}}">
+		<link rel="stylesheet" href="{{asset('site/fontawesome/css/all.css')}}">
 		<link rel="stylesheet" href="{{asset('site/css/style.css')}}">
 	</head>
 	<body>
@@ -107,7 +107,7 @@
 						Copyright 2020 &copy; Deupur Namuna English Boarding School, All rights reserved.
 					</div>
 					<div class="col-md-4 text-right">
-						Develop by Muna Gautam
+						Develop by Bishnu Maya Dhakal
 					</div>
 				</div>
 			</div>

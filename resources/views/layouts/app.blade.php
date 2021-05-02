@@ -57,6 +57,9 @@
                                 <x-jet-nav-link href="{{route('getManagePage')}}">
                                     {{ __('Page') }}
                                 </x-jet-nav-link>
+                                <x-jet-nav-link href="{{route('getManageSlider')}}">
+                                    {{ __('Slider') }}
+                                </x-jet-nav-link>
                             </div>
                         </div>
 
